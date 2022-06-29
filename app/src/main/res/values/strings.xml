@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Shell Recharge</string>
+
+
+    <!-- FINGERPRINT SECTION -->
+    <string name="fingerprint_description">We need your fingerprint to continue</string>
+    <string name="fingerprint_hint">Please touch the fingerprint sensor</string>
+
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognised</string>
+
+    <string name="fingerprint_description_icon">Fingerprint icon</string>
+    <string name="user_choose_hint">Select the user to sign on as.</string>
+
+    <string name="auth_please_authenticate">Please authenticate</string>
+    <string name="title_activity_approval">ApprovalActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="channel_name">Fifa+</string>
+    <string name="channel_description">FIFA + App notifications</string>
+
+</resources>

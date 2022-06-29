@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_initial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/account"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:visibility="gone">
+
+
+
+
+        <Button
+            android:id="@+id/buttonSignin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="200dp"
+            android:paddingTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:text=""
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:text=""
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/buttonSignin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#FFFFFF"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#EFEFEF"
+            android:gravity="center"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblPaired"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00dd00"
+            android:gravity="center"
+            android:text="Account activated successfully"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="420dp"
+            android:layout_height="144dp"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblTitle" />
+
+        <TextView
+            android:id="@+id/lblDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:maxLines="14"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+        <TextView
+            android:id="@+id/lbl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="23dp"
+            android:text="Description"
+            android:textColor="#222222"
+            android:textSize="16sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblDescription" />
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="23dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:backgroundTint="#EEEEEE"
+            android:selectAllOnFocus="true"
+            android:textColor="#555555"
+            android:textColorHighlight="#dddddd"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl1" />
+
+        <TextView
+            android:id="@+id/lbl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Description"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input1" />
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="23dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:backgroundTint="#EEEEEE"
+            android:selectAllOnFocus="true"
+            android:textColor="#555555"
+            android:textColorHighlight="#dddddd"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl2" />
+
+        <TextView
+            android:id="@+id/lbl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Description"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input2" />
+
+        <EditText
+            android:id="@+id/input3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="23dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:backgroundTint="#EEEEEE"
+            android:selectAllOnFocus="true"
+            android:textColor="#555555"
+            android:textColorHighlight="#dddddd"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl3" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="40dp"
+
+            android:backgroundTint="#1397a9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input3" />
+
+        <TextView
+            android:id="@+id/lbl4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+
+
+            android:textColor="#222222"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/checkBox4"
+            app:layout_constraintTop_toTopOf="@id/checkBox4"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="#1397a9"
+            android:backgroundTintMode="add"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lbl4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_loggedin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="55dp"
+        android:background="#FFFFFF"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lblAccount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Account"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:background="#EFEFEF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imgPlug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plug"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblAccount"/>
+        <TextView
+            android:id="@+id/lblUser"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text=""
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgPlug"/>
+
+        <ImageView
+            android:id="@+id/imgAcct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logged_in"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblUser" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:background="@android:color/transparent"
+            android:backgroundTintMode="add"
+            android:onClick="doLogout"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/acctButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:text="" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
